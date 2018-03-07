@@ -1,0 +1,327 @@
+%%CÓDIGO BASE DE LaTeX DESENVOLVIDO NA PLATAFORMA OVERLEAF
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{indentfirst}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\vfill
+\huge{\textbf{CIRCUITOS I}}
+\vfill
+
+\end{center}
+\end{titlepage}
+
+\newpage
+\Large{\textbf{Sobre o material}}\\
+\normalsize
+
+O objetivo desse blábláblá...
+
+\newpage
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{\slshape{Circuitos I}}
+\fancyfoot[C]{\thepage}
+
+\renewcommand*\contentsname{Sumário}
+\tableofcontents
+
+\renewcommand{\figurename}{Imagem.}
+
+
+\newpage
+\section{*Conteúdo*}
+
+\subsection{*nova sub-seção*}
+
+\newpage
+\section{Exercícios}
+
+\subsection{tipo 1 de exercício}
+
+\begin{enumerate}
+\item EXEMPLO DE ENUNCIADO: Determine a constante de tempo $T=RC$ do circuito e a sua saída $e_{o}(t)$ para uma entrada $e_{i}(t)=20$.
+  
+  \begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.5]{imagens/exemplo.JPG}
+  \caption{exemplo}
+  \label{fig:exemplo}
+  \end{figure}
+
+\item *enunciado do exercício*
+\item *enunciado do exercício*
+\end{enumerate}
+
+\newpage
+\section{Provas e exames}
+
+\subsection{P2 2015/2}
+
+Questão 1:\\
+Item a) Determine os parâmetros $h$:
+$$E_1=h_{11}I_1+h_{12}E_2$$
+$$I_2=h_{21}I_1+h_{22}E_2$$
+para o quadripolo $A$.\\\\
+
+IMAGEM DO CIRCUITO\\
+
+Item b) Repita o item anterior para o quadripolo $B$ e compare os parâmetros obtidos com aqueles do quadripolo $A$. Qual a maior diferença?\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 2: Dado o quadripolo $C$
+$$E_3=10I_3$$
+$$I_4=2.5E_4$$
+que realimenta confirme o esquema o quadripolo $A$. Escreva o sistema de equações que modela e resolve todo o circuito. Calcule o ganho $e_0/e_i$.
+$$MX=U$$ 
+$$X^T=[E_1 I_1 E_2 I_2 E_ 3 I_3 E_4 I_4]$$\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 3: Dado o quadripolo $D$:
+$$E_i=44I_i+30I_0$$
+$$E_0=30I_i+39I_0$$
+e o mesmo quadripolo $B$ anterior, determine:\\
+Item a) Literalmente $EDOL$ e as condições iniciais para a saída $e_0(t)$.\\
+Item b) A expressão de $e_0(t)$ e o seu regime permanente $e_{orp}(t)$ para $e_i(t)=15t^2$. $L=10H$ $C=1/40F$ $R=1\Omega$.\\
+
+IMAGEM DO CIRCUITO\\
+
+\newpage
+\subsection{Exame 2015/2}
+
+Questão 1:\\
+Item a) Determine os parâmetros $h$:
+$$E_1=h_{11}I_1+h_{12}E_2$$
+$$I_2=h_{21}I_1+h_{22}E_2$$
+para o quadripolo $A$.\\\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 2: Dado o quadripolo $B$:
+$$E_3=13I_3+E_4$$
+$$I_4=-I_3$$
+
+escreva o sistema de equações que modela e resolve o circuito quadripolo $A$ realimentado pelo quadripolo $B$. Calcule o ganho $e_0/e_i$.
+
+$$MX=U$$ 
+$$X^T=[E_1 I_1 E_2 I_2 E_ 3 I_3 E_4 I_4]$$\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 3: Determine a constante de tempo $T=RC$ do circuito e a sua saída $e_0(t)$ para uma entrada $e_i(t)=20$.\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 4: Dado o circuito que modela um motor $cc$ com carga no eixo.\\
+Item a) Monte literalmente as $EDOL$ para $i_a(t)$ e $w(t)$ e as condições iniciais correspondentes.\\
+Item b) Calcule a velocidade $w(t)$.\\
+
+IMAGEM DO CIRCUITO\\
+
+$R_a=0.45\;\Omega$
+$L_a=10\;mH$
+$K_a=7\;N.m/A$
+$D=0.5\;kg.{m^2}/s$
+$J=0.1\;kg.m^2$
+$K_w=0.025\;V.s$
+
+
+\newpage
+\subsection{Exame 2016/2} 
+
+Questão 1: Determine $i$ e $v$ e o balanço de potência.\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 2: Calcule as leituras $A$ e $V$ em regime permanente e as expressões temporais $i(t)$ e $v(t)$.\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 3: Determine $i$, $v$ e o balanço de potência.\\
+
+IMAGEM DO CIRCUITO\\
+
+Questão 4: Sabendo-se que $R=4\;\Omega$ dissipa potência máxima:
+$$1\;W \quad para\quad E=0 \quad I=2\;A$$
+$$1\;W \quad para\quad E=1\;V \quad I=0$$
+$$2.25\;W \quad para\quad E=1\;V \quad I=2\;A$$
+
+Item a) Determine o valor de $R$ para dissipar $1.5\;W$ com $E=1\;V$ e $I=1\;A$.\\
+
+Item b) Calcule quanto representa em porcentagem $1.5\;W$ com $E=1\;V$ e $I=1\;A$ comparando-se com a máxima transferência de potência possível nessa situação.\\
+
+IMAGEM DO CIRCUITO\\
+
+\newpage
+\subsection{P1 2017/1}
+
+\begin{enumerate}
+\item Literalmente, calcule:
+\begin{enumerate}
+\item $e_o/e_i$ com a chave $S$ aberta.
+\item A constante de tempo $T=RC$.
+\item Adotando $R_1=20\;\Omega \quad R_2=125\;\Omega \quad \mu = 0.01\;A/V \quad C=1000\;\mu F \quad e_i(t)=(5+5t)$ determine: $T=RC$, $e_c(t)$, $e_o(t)$ e desenhe suas formas de onda.\\
+
+IMAGEM DO CIRCUITO\\
+
+\end{enumerate}
+
+\item Sabendo-se que o volt-metro mede $V=24\;volts$ calcule:
+\begin{enumerate}
+\item $E$.
+\item Balanço de potência.\\
+
+IMAGEM DO CIRCUITO\\
+
+\end{enumerate}
+\item Calcule:
+\begin{enumerate}
+\item Literalmente, monte a $EDOL$ e as condições iniciais para $e_0t)$.
+\item Adotando componente unitários, calcule $e_0(t)$ para $e_i(t)=4+40t$.\\
+
+IMAGEM DO CIRCUITO\\
+
+\end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+\newpage
+\subsection{P2 2017/1}
+
+IMAGEM DO CIRCUITO\\
+
+\begin{enumerate}
+\item Calcule os parâmetros $h$ do quadripolo.
+\item Para $t=0$, calcule $R_i$, $R_o$ e $e_o/e_i$.
+\item Calcule $e_o(t)$, $e_i(t)$ e os valores estacionários justificando fisicamente no circuito.
+$$e_i(t)=2(1+10t)$$
+\end{enumerate}
+
+\newpage
+\subsection{Exame 2017/1 parte 1}
+
+\begin{enumerate}
+\item Determine:
+\begin{enumerate}
+\item $i(t)$ e $v(t)$.
+\item $i(t)$ e $v(t)$ em regime permanente.
+$$ R=10\;\Omega \quad L=\sqrt{3}\;H \quad C=\frac{1}{100\sqrt{3}}\;F $$\\
+
+IMAGEM DO CIRCUITO\\
+
+$$e_1(t)=300\sqrt{2}\;cos10t$$
+$$e_2(t)=-150\sqrt{2}\;cos10t + 150\sqrt{6}\;sin10t$$
+$$e_3(t)=-150\sqrt{2}\;cos10t - 150\sqrt{6}\;sin10t$$
+
+\end{enumerate}
+\item Determine para o circuito abaixo:
+\begin{enumerate}
+\item Em $t=0 \quad R_{in} \quad R_{out} \quad e_1/e_i \quad e_o/e_i$.
+\item Monte as $EDOL$ de 1ª ordem para $x_1$ e $x_2$ e a equação de saída para $e_o$.\\
+
+\[
+\begin{bmatrix}
+\dot x_{1}\\
+\dot x_{2}
+\end{bmatrix}
+=
+\begin{bmatrix}
+ \quad \quad
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
++
+\begin{bmatrix}
+\quad \\
+\quad
+\end{bmatrix}
+\begin{bmatrix}
+u
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+ \quad \quad
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\
+x_2
+\end{bmatrix}
++
+\begin{bmatrix}
+\quad
+\end{bmatrix}
+\begin{bmatrix}
+u
+\end{bmatrix}
+\]
+Sendo, $u=e_i \quad y=e_o$.\\
+
+IMAGEM DO CIRCUITO\\
+
+$$R_1=1.5\;\Omega \quad R_e=1\;\Omega \quad R_2=10\;\Omega \quad r_i=0.5\;\Omega \quad r_o=50\;\Omega$$
+$$\beta = 11 \quad C_1=\frac{1}{105}\;F \quad C_2=\frac{1}{976}\;F$$
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\newpage
+\subsection{Exame 2017/1 parte 2}
+
+\begin{enumerate}
+\item Determine $i$, $v$ e o balanço de potência.\\
+
+IMAGEM DO CIRCUITO\\
+
+\item Para o circuito abaixo calcule $e_o$ e $i_1$ para $e_i=12\;mV$. Desenhe o quadripolo $h$ equivalente à associação dos quadripolos $1$ e $2$ indicando valores dos parâmetros.\\
+
+IMAGEM DO CIRCUITO\\
+
+\item Calcule:
+\begin{enumerate}
+\item $e_o(t)$ para $e_i(t)=1+t$.
+\item Determine a representação de estado $\dot{x}=Ax+Bu \quad y=Cx+Du$ onde $x_1$ e $x_2$ são as tensões em $c_1$ e $c_2$ e $u$ é a entrada $e_i(t)$.\\
+
+IMAGEM DO CIRCUITO\\
+
+$$R_1=100\;\Omega \quad R_2=20\;\Omega \quad R_s=5\;\Omega \quad r_o=50\;\Omega \quad C_1=10000\;\mu F$$
+$$C_2=1000\;\mu F \quad \mu=0.1\;A/V$$
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+\newpage
+
+Tabela de símbolos\\
+
+
+\end{document}
